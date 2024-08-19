@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #3a3a3a;
+}
+
+
+.date__box{
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  border-top: 3px solid hsl(31, 60%, 41%);;
+  padding: 10px;
+  margin: 20px 0;
+  position: relative;
+
+  &__left{
+    display: flex;
+    column-gap: 1px;
+    position: absolute;
+    top: -15px;
+  }
+  &__days{
+    width: 113px;
+    height: 82px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    border:none;
+    color: #d39742;
+    transition: 0.2s ease-in-out;
+    background: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+&__days::before{
+    content: "";
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.5)
+    );
+    height: 100px;
+    width: 50px;
+    position: absolute;
+    top: -28px;
+    left: -75px;
+    transform: skewX(-45deg);
+}
+
+&__days:hover{
+    cursor: pointer;
+    background: #d39742;
+    color: #fff;
+}
+
+&__days:hover::before{
+    left: 350px;
+    transition: 0.5s ease-in-out;
+}
+
+  &__right{
+    position: absolute;
+    right: 15px;
+    h3{
+      color: #d39742;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    :hover{
+      cursor: pointer;
+      background-color: #d39742;
+      width: 61px;
+      height: 80px;
+      color: white;
+      position: absolute;
+      top: -25px;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

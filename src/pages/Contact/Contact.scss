@@ -1,0 +1,118 @@
+.contact{
+    background: #535353;
+    width: 100%;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        padding: 50px;
+        height: 440px;
+        &__top{
+            display: flex;
+            column-gap: 50px;
+            justify-content: center;
+            &__inps{
+                display: flex;
+                flex-direction: column;
+                // row-gap: 40px;
+                margin-right: 50px;
+            }
+        }
+        &__message textarea{
+            height: 93.2%;
+            width: 750px;
+            background: none;
+            border: none;
+            outline: none;
+            font-size: larger;
+        }
+
+        
+        
+    }
+    &__accept{
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        width: 100%;
+
+        &__box{
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+            color: white;
+            
+            a{
+                text-decoration: none;
+                color: #D39742;
+
+            }
+
+            a:hover{
+                  text-decoration: underline;
+            }
+
+            &__inp{
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        &__btn{
+            width: 160px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 30px;
+            margin: 10px 20px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #d39742;
+            border-radius: 8px;
+            font-family: "Montserrat", sans-serif;
+            color: #d39742;
+            transition: 0.2s ease-in-out;
+
+        }
+
+        &__btn::before{
+            content: "";
+            background: linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.5)
+            );
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: -8px;
+            left: -75px;
+            transform: skewX(-45deg);
+        }
+
+        &__btn:hover{
+            background: #d39742;
+            color: #fff;
+        }
+
+        &__btn:hover::before{
+            left: 350px;
+            transition: 0.5s ease-in-out;
+        }
+    }
+}
+
+.inps{
+    width: 460px;
+    height: 80px;
+    border: none;
+    background: none;
+    font-size: larger;
+    outline: none;
+    border-bottom: 1px solid #808080;
+}
+
+.contact__box__message textarea:hover,
+.inps:hover{
+    border-bottom: 2px solid #D39742;
+}

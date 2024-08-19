@@ -1,0 +1,161 @@
+
+.schedule-container {
+    display: flex;
+    background:linear-gradient(135deg, #292347 0%, #576363 100%);;
+    box-shadow: 0 4px 8px rgba(156, 67, 67, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+
+
+  }
+  
+.schedule__box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+// .session__box{
+//   width: 100%;
+//   padding: 30px;
+//   display: flex;
+//   &__left{
+//     width: 100%;
+//   &__top{
+//     display: flex;
+//     align-items: center;
+//     column-gap: 10px;
+//     width: 100%;
+//     p{
+//       font-size: 18px;
+//       font-weight: 600;
+//       color: white;
+//     }
+//     .line{
+//       background: #8a7f5d;
+//       width: 20%;
+//       height: 2px;
+//     }
+
+//   }
+//   &__bottom{
+//     display: flex;
+//     align-items: baseline;
+//     h4{
+//       font-size: 24px;
+//       font-weight: bold;
+//       color: #F5C8A0;
+//     }
+//     p{
+//        font-size: 14px; /* Размер текста цены */
+//         color: #D3D3D3; /* Цвет текста цены */
+//         margin-left: 8px;
+//     }
+//   }
+// }
+
+// }
+
+  
+
+  
+  .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+  
+  .schedule-info {
+    color: #f4a641;
+    padding-left: 20px;
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  
+    .rating {
+      background-color: #e80000;
+      color: white;
+      padding: 5px 10px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  
+    .details {
+      p {
+        margin: 5px 0;
+      }
+    }
+  
+    .hall-schedule {
+      display: flex;
+      justify-content: space-between;
+  
+      .hall,
+      .vip-hall {
+        margin-right: 20px;
+  
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+  
+
+  .video-container {
+    width: 264px;
+    height: 390px;
+    
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .youtube-icon {
+    position: absolute;
+    bottom: 20px; 
+    left: 210px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    :hover{
+      width: 70px;
+      height: 65px;
+    }
+  }
+  
+  .youtube-icon img {
+    width: 50px;
+    height: 50px; 
+  }
+  
+
+
+.video-player{
+  position: absolute;
+  top: 0;
+  left: 0;
+  // z-index: 15;
+}
+
+
+
